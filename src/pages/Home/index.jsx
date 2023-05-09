@@ -21,6 +21,27 @@ const BannerContainer = styled.div`
         height: 111px;
   }
 `;
+const CardsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 50px 60px;
+  align-items: stretch;
+  padding: 56px 50px;
+  margin: 43px 0 26px;
+  border-radius: 25px;
+  background: #F7F7F7;
+  @media (max-width: 768px) {
+    margin-bottom: 26px;
+    gap: 20px 60px;
+    width: 100%;
+    margin-top: 22px;
+    padding: 0;
+    border-radius: 0;
+    padding-bottom: 56px;
+    background: white;
+  }
+`;
+
 export default function Home() {
   
 
@@ -30,9 +51,9 @@ export default function Home() {
       <BannerContainer className="ContainerBanner">
         <Banner bannerData={banner_data} />
       </BannerContainer>
-      <div className={styles.cardsContainer}>
+      <CardsContainer className="ContainerCards">
         <Cards />
-      </div>
+      </CardsContainer>
     </div>
   );
 }

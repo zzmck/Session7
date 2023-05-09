@@ -20,6 +20,7 @@ Insert the component wherever you want:
 `<Location data={data} />`
 
 The component will render the location information based on the provided data prop.
+Use `data=yourDATA.location`
 
 If you want to add a special class for this component, you can use the classComponent prop:
 `<Location data={data} classComponent={styles.location} />`

@@ -7,14 +7,14 @@
 .tagclass{
   display: flex;
   min-width: 115px;
-  background: #FF6060;
+  background: var(--primary-color);
   border-radius: 10px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: var(--background-color);
   align-items: center;
   justify-content: center;
   padding-left:10px;

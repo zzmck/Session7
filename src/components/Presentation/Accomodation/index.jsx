@@ -15,7 +15,7 @@ const TitleStyle = styled.div`
   display: flex;
   align-items: flex-end;
   
-  color: #FF6060;
+  color: var(--primary-color);
   min-height: 51px;
   @media(max-width:768px){
       font-size: 18px;
@@ -33,7 +33,7 @@ const LocationStyle = styled.div`
   display: flex;
   align-items: flex-end;
     height: fit-content;
-  color: #FF6060;
+  color: var(--primary-color);
   @media(max-width:768px){
     font-weight: 500;
     font-size: 14px;

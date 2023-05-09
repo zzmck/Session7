@@ -4,10 +4,11 @@ import starFull from '../../assets/star_full.svg'
 import starEmpty from '../../assets/star_empty.svg'
 
 export default function Rate(props) {
-  const {data} = props;
+  const {data, classComponent} = props;
+  const specialStyle = classComponent ? `${styles.container} ${classComponent}` : styles.container;
   const range = [1, 2, 3, 4, 5];
   return (
-    <div className={styles.container} >
+    <div className={specialStyle} >
       {range.map((nbStar, index)=>{
         const isFull = data >= nbStar;
         const imgSrc = isFull ? starFull : starEmpty;

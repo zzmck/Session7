@@ -6,33 +6,10 @@
     margin-bottom:26px;
     flex-direction: column;
 }
-.cardsContainer{
-    display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 50px 60px;
-  align-items: stretch;
-  padding: 56px 50px;
-  margin: 43px 0 26px;
-  border-radius: 25px;
-  background: #F7F7F7;
-
-}
 @media (max-width: 768px) {
     .container{
     margin-top:16px;
     margin-right: 20px;
     margin-left: 20px;
-    }
-    .cardsContainer{
-        margin-bottom: 26px;
-        gap: 20px 60px;
-        width: 100%;
-        margin-top: 22px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-        border-radius: 0px;
-        padding-bottom: 56px;
-        background: white;
     }
 }

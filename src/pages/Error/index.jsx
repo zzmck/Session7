@@ -1,7 +1,20 @@
 import React from 'react'
 import Error from '../../components/Error'
-import styles from './error.module.css';
+import styled from 'styled-components'
 
+const ContainerError=styled.div`
+    display:flex;
+    margin-right:100px;
+    margin-left:100px;
+    margin-top:26px;
+    margin-bottom:26px;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+`;
 export default function error() {
   const dataError = [{
     "type" : "404",
@@ -9,8 +22,8 @@ export default function error() {
     "returnMessage" : "Retourner à la page d'accueil"
   }];
   return (
-    <div className={styles.container}>
+    <ContainerError className="ErrorContainer">
         <Error data={dataError} />
-    </div>
+    </ContainerError>
   )
 }

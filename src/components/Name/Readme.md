@@ -21,6 +21,5 @@ Insert the component wherever you want:
 
 The component will render the host's name and picture based on the provided props.
 
-If you want to add a special style for the component, you can use the container class in your CSS module file (name.module.css):
-`.container {`
-`}`
+If you want to add a special style for the component, you can send props :
+`<Name name={name} picture={picture} classComponent={Your class stylised}/>`

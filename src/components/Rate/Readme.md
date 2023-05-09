@@ -19,3 +19,6 @@ Insert the component wherever you want:
 `<Rate data={data} />`
 The component will render the rating based on the provided data value. 
 It uses star icons to represent the rating.
+
+If you want to add a special style for the component, you can send props :
+`<Rate data={data} classComponent={Your class stylised}/>`

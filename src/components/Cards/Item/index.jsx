@@ -7,24 +7,23 @@ import styled from 'styled-components'
 const TitleStyle = styled.div`
   font-family: var(--font-family);
   position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right:20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-
-display: flex;
-align-items: flex-end;
-
-color: #FFFFFF;
+  bottom: 20px;
+  left: 20px;
+  right:20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--background-color);
   @media(max-width:768px){
     bottom: 15px;
     left: 19.7px;
     right: 19.7px;
   }
 `;
+
 export default function Item({ data }) {
   const { id, cover, title } = data;
   useEffect(() => {

@@ -38,7 +38,7 @@ line-height: 68px;
 text-align: center;
 height: 100%;
 width: 100%;
-color: #FFFFFF;
+color: var(--background-color);
 font-style: normal;
 z-index: 2;
 }
