@@ -5,6 +5,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   gap:15.25px;
+  padding-bottom: 12px;
 }
 
 .star{
@@ -14,7 +15,9 @@
 @media (max-width: 768px) {
     .container {
   width: fit-content;
+  align-items: center;
   gap:6.6px;
+  padding-bottom: 0px;
     }
     .star{
       height:14px;

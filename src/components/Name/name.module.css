@@ -5,6 +5,7 @@
 }
 .name{
   height:64px;
+  width: 93px;
   display:flex;
   text-align: right;
   font-family: var(--font-family);

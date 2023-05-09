@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 196px;
+    width: max-content;
 }
 @media (max-width: 1050px) {
   .container {
