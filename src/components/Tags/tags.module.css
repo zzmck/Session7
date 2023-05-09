@@ -1,0 +1,35 @@
+.container {
+    display:flex;
+    min-height: 25px;
+    margin-top: 20px;
+    gap: 10px;
+}
+.tagclass{
+  display: flex;
+  min-width: 115px;
+  background: #FF6060;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  padding-left:10px;
+  padding-right:10px;
+}
+@media (max-width: 768px) {
+    .container {
+      min-height: 18px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .tagclass{
+      min-width: 84px;
+      border-radius: 5px;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }

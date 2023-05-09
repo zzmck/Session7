@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  height: 24px;
+  width: 196px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap:15.25px;
+}
+
+.star{
+  width:24.75px;
+  height:24px;
+}
+@media (max-width: 768px) {
+    .container {
+  width: fit-content;
+  gap:6.6px;
+    }
+    .star{
+      height:14px;
+      width:13px;
+    }
+  }

@@ -1,0 +1,10 @@
+.picture {
+    height: 39.44px;
+    width:122px;
+    margin-top:66px;
+}
+@media (max-width: 768px) {
+    .picture {
+      margin-top:62px;
+    }
+  }

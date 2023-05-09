@@ -1,0 +1,22 @@
+.container {
+    display:flex;
+    margin-right:100px;
+    margin-left:100px;
+    margin-top:44px;
+    margin-bottom:26px;
+    flex-direction: column;
+}
+.containerCollapse{
+  margin: 0 110px;
+}
+@media (max-width: 768px) {
+    .container {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+    .containerCollapse{
+      margin: 0 0px;
+      margin-top:0px;
+    }
+  }

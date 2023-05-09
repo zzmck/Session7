@@ -1,0 +1,25 @@
+.container{
+    display:flex;
+    height:34px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.itemsContainer{
+    display:flex;
+    height:34px;
+    justify-content: flex-end;
+    text-decoration: none;
+    gap: 57px;
+    }
+.decoration{
+    text-decoration: none;
+}
+    @media (max-width: 768px) {
+        .container {
+            height:17px;
+        }
+        .itemsContainer{
+            height:17px;
+            Gap: 10px;
+        }
+      }
