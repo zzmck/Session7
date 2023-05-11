@@ -5,9 +5,9 @@ import TextFooter from './Text'
 
 export default function footer() {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <LogoFooter />
       <TextFooter />
-    </div>
+    </footer>
   )
 }

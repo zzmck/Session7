@@ -11,7 +11,7 @@ const banner_data = [{
   "alt":"Description about the picture",
   "overlay":0.3
 }];
-const BannerContainer = styled.div`
+const BannerContainer = styled.section`
   display: flex;
   position: relative;
   justify-content: center;
@@ -21,7 +21,7 @@ const BannerContainer = styled.div`
         height: 111px;
   }
 `;
-const CardsContainer = styled.div`
+const CardsContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 50px 60px;
@@ -46,7 +46,7 @@ export default function Home() {
   
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <h1 data-testid="TitleWebsite" hidden>Bienvenue sur kasa</h1>
       <BannerContainer className="ContainerBanner">
         <Banner bannerData={banner_data} />
@@ -54,6 +54,6 @@ export default function Home() {
       <CardsContainer className="ContainerCards">
         <Cards />
       </CardsContainer>
-    </div>
+    </main>
   );
 }

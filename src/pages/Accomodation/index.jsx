@@ -7,7 +7,7 @@ import { DataContext } from '../../context';
 import { useParams, Navigate } from 'react-router-dom';
 import styled from 'styled-components'
 
-const ContainerCollapse=styled.div`
+const ContainerCollapse=styled.section`
   display: flex;
   width: 100%;
   margin-top: 24px;
@@ -45,12 +45,12 @@ export default function Accomodation() {
   }]
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Slideshow data={dataSlider} />
       <Presentation data={dataPresentation} />
       <ContainerCollapse>
         <Collapse direction='row' data={dataCollapse} />
       </ContainerCollapse>
-    </div>
+    </main>
   );
 }

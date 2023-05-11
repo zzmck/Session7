@@ -1,8 +1,7 @@
-import React,{useState} from 'react'
+import React,{ useState } from 'react'
 import styles from './headerItems.module.css'
 
-export default function NavItems({name}) {
-
+export default function NavItems({name, clicked, onClick}) {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -15,9 +14,10 @@ export default function NavItems({name}) {
 
 
   return (
-      <li className={`${styles.items} ${hovered ? styles.underline : ''}`}
+      <li className={`${styles.items} ${hovered || clicked ?  styles.underline : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
       >{name}</li>
   )
 }

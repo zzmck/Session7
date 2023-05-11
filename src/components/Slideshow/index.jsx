@@ -7,7 +7,7 @@ const Slider = ({ data }) => {
   const { dataSlider, slideAnim, nextSlide, prevSlide } = useSlider(data);
 
   return (
-    <div data-testid="Slider" className={styles.container}>
+    <section data-testid="Slider" className={styles.container}>
         <>
           {dataSlider.map((image, index) => (
             <div
@@ -45,7 +45,7 @@ const Slider = ({ data }) => {
             </>
           )}
         </>
-    </div>
+    </section>
   );
 };
 

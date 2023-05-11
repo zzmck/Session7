@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import Title from '../../Title';
 import styles from './cardsItem.module.css';
 import styled from 'styled-components'
@@ -46,8 +46,9 @@ export default function Item({ data }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
+    <article data-testid="cards-items" className={styles.card}>
     <Link to={`/accomodation/${id}`}>
-      <div data-testid="cards-items" className={styles.card}>
+      <h2 hidden>{title}</h2>
         <img
           data-testid="cards-picture"
           src={cover}
@@ -63,7 +64,7 @@ export default function Item({ data }) {
         <TitleStyle>
           <Title data={title} classComponent={styles.title} />
         </TitleStyle>
-      </div>
-    </Link>
+        </Link>
+    </article>
   );
 }

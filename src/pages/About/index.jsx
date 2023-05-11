@@ -6,7 +6,7 @@ import picture from '../../assets/banner_about.webp'
 
 import styled from 'styled-components'
 
-const ContainerBanner = styled.div`
+const ContainerBanner = styled.section`
   display:flex;
   position: relative;
   justify-content: center;
@@ -20,7 +20,7 @@ const ContainerBanner = styled.div`
     border-radius: 10px;
   }
 `;
-const ContainerCollapse=styled.div`
+const ContainerCollapse=styled.section`
     display: flex;
     max-width: 1040px;
     margin-top: 31px;
@@ -59,13 +59,13 @@ export default function about() {
 
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
     <ContainerBanner>
       <Banner bannerData={banner_data} />
     </ContainerBanner>
     <ContainerCollapse> 
       <Collapse direction="column" data={dataCollapse} />
     </ContainerCollapse>
-    </div>
+    </main>
   )
 }

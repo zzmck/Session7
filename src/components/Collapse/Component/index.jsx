@@ -29,7 +29,8 @@ export default function Description({ direction, data }) {
   const textClass = direction === "column" ? `${styles.text} ${styles.column}` : `${styles.text} ${styles.row}`;
   return (
     <>
-      <div className={styles.container}>
+      <article className={styles.container}>
+      <h2 hidden>{title}</h2>
         <div data-testid="titleCollapse" className={styles.title} onClick={toggleDescription}>
           <span className={textClass}>{title}</span>
           <img
@@ -39,7 +40,7 @@ export default function Description({ direction, data }) {
           />
         </div>
         <Content direction={direction} data={showData} state={isDescriptionOpen} />
-      </div>
+      </article>
     </>
   )
 }

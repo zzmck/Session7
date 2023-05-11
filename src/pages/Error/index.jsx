@@ -2,7 +2,7 @@ import React from 'react'
 import Error from '../../components/Error'
 import styled from 'styled-components'
 
-const ContainerError=styled.div`
+const ContainerError=styled.main`
     display:flex;
     margin-right:100px;
     margin-left:100px;

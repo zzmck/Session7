@@ -12,8 +12,12 @@
     gap: 57px;
     }
 .decoration{
+    color: var(--primary-color);
     text-decoration: none;
 }
+.underline{
+    text-decoration-line: underline;
+  }
     @media (max-width: 768px) {
         .container {
             height:17px;

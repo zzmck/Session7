@@ -15,11 +15,11 @@ export default function Presentation({data}) {
 
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <ContainerAccomodation>
         <DescAccomodation data={data} />
       </ContainerAccomodation>
       <RateName data={data} />
-    </div>
+    </section>
   )
 }
